@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "احسان فضلی", role: "برنامه‌نویس", img: "ehsan.jpg", telegram: "https://t.me/abj0o" },
         { name: "فاطمه فریدی", role: "مدیریت پروژه", img: "fateme.jpg", telegram: "https://t.me/Aydi_bezar" },
         { name: "علی بیگی (نکسل)", role: "طراح گرافیکی", img: "ali.jpg", telegram: "https://t.me/n6xel" },
-        { name: "امین اسقاط", role: "طراح ایده", img: "amin.jpg", telegram: "https://t.me/cpt_kilroy" }
+        { name: "امین خاکپور", role: "طراح ایده", img: "amin.jpg", telegram: "https://t.me/cpt_kilroy" }
     ];
 
     teamMembers.forEach(member => {
