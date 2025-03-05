@@ -1,35 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const teamContainer = document.getElementById("team-container");
 
-    // اطلاعات اعضای تیم
     const teamMembers = [
-        {
-            name: "احسان فضلی",
-            role: "برنامه‌نویس",
-            img: "ehsan.jpg",
-            telegram: "https://t.me/abj0o"
-        },
-        {
-            name: "فاطمه فریدی",
-            role: "مدیریت پروژه",
-            img: "fateme.jpg",
-            telegram: "https://t.me/Aydi_bezar"
-        },
-        {
-            name: "علی بیگی (نکسل)",
-            role: "طراح گرافیکی",
-            img: "ali.jpg",
-            telegram: "https://t.me/n6xel"
-        },
-        {
-            name: "امین اسقاط",
-            role: "طراح ایده",
-            img: "amin.jpg",
-            telegram: "https://t.me/cpt_kilroy"
-        }
+        { name: "احسان فضلی", role: "برنامه‌نویس", img: "ehsan.jpg", telegram: "https://t.me/abj0o" },
+        { name: "فاطمه فریدی", role: "مدیریت پروژه", img: "fateme.jpg", telegram: "https://t.me/Aydi_bezar" },
+        { name: "علی بیگی (نکسل)", role: "طراح گرافیکی", img: "ali.jpg", telegram: "https://t.me/n6xel" },
+        { name: "امین اسقاط", role: "طراح ایده", img: "amin.jpg", telegram: "https://t.me/cpt_kilroy" }
     ];
 
-    // اضافه کردن اعضای تیم به صفحه
     teamMembers.forEach(member => {
         const memberDiv = document.createElement("div");
         memberDiv.classList.add("member");
@@ -44,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         teamContainer.appendChild(memberDiv);
     });
 
-    // افکت محو شدن هنگام اسکرول
     const fadeElements = document.querySelectorAll(".fade-in");
 
     function checkFadeIn() {
@@ -57,5 +34,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", checkFadeIn);
-    checkFadeIn(); // برای بررسی اولیه هنگام بارگذاری صفحه
+    checkFadeIn();
 });
