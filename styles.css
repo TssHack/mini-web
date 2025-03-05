@@ -1,14 +1,14 @@
 body {
     font-family: 'Tahoma', sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212; /* پس‌زمینه تیره */
+    color: #e0e0e0; /* متن خاکستری روشن */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: linear-gradient(to right, #0077b6, #00a8e8);
+    background: linear-gradient(to right, #00bfa5, #00897b); /* سبز فیروزه‌ای */
     color: white;
     padding: 30px 10px;
     animation: fadeIn 1.5s ease-in-out;
@@ -20,10 +20,15 @@ header h1 span {
 
 .about, .team {
     padding: 20px;
-    background: white;
+    background: #1e1e1e; /* پس‌زمینه خاکستری تیره */
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 191, 165, 0.5); /* سایه سبز فیروزه‌ای */
+    transition: transform 0.3s ease-in-out;
+}
+
+.about:hover, .team:hover {
+    transform: scale(1.02);
 }
 
 /* افکت محو شدن (Fade-in) */
@@ -45,18 +50,19 @@ header h1 span {
 }
 
 .member {
-    background: #0077b6;
-    color: white;
+    background: #00bfa5; /* سبز فیروزه‌ای */
+    color: #121212;
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     width: 200px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background 0.3s;
 }
 
 .member:hover {
     transform: scale(1.05);
+    background: #00897b; /* تغییر رنگ هنگام هاور */
 }
 
 .member img {
@@ -64,10 +70,11 @@ header h1 span {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 3px solid white;
 }
 
 footer {
-    background: #222;
+    background: #000;
     color: white;
     padding: 10px;
     margin-top: 20px;
